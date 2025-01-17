@@ -33,4 +33,24 @@ const myfunction = function(){
     
 }
 
-console.log(typeof temp);
+//console.log(typeof temp);
+
+// ******************************** STACK AND HEAP MEMORY **************************************************
+
+let a = 123
+let b = a
+b = 456
+
+//console.log(a);
+//console.log(b);
+
+let userone = {
+    name: "anubhab",
+    id: 101
+}
+
+let usertwo = userone
+usertwo.name = "seezen"
+
+console.log(userone.name);
+console.log(usertwo.name);
